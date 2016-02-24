@@ -11,7 +11,7 @@ import com.lyft.scoop.transitions.BackwardSlideTransition;
 import com.lyft.scoop.transitions.ForwardSlideTransition;
 
 @Controller(ConfirmationController.class)
-@DaggerModule(ConfirmationModule.class)
+@DaggerModule(values = ConfirmationModule.class)
 @EnterTransition(ForwardSlideTransition.class)
 @ExitTransition(BackwardSlideTransition.class)
 public class ConfirmationScreen extends Screen{

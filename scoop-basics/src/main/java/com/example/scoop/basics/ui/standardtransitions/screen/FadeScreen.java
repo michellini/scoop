@@ -10,7 +10,7 @@ import com.lyft.scoop.dagger.DaggerModule;
 import com.lyft.scoop.transitions.FadeTransition;
 
 @Controller(FadeController.class)
-@DaggerModule(FadeModule.class)
+@DaggerModule(values = FadeModule.class)
 @EnterTransition(FadeTransition.class)
 @ExitTransition(FadeTransition.class)
 public class FadeScreen extends Screen{

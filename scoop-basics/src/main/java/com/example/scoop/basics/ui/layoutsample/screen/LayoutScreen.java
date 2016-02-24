@@ -6,7 +6,7 @@ import com.lyft.scoop.Layout;
 import com.lyft.scoop.Screen;
 import com.lyft.scoop.dagger.DaggerModule;
 
-@DaggerModule(LayoutModule.class)
+@DaggerModule(values = LayoutModule.class)
 @Layout(R.layout.layout_sample)
 public class LayoutScreen extends Screen {
 

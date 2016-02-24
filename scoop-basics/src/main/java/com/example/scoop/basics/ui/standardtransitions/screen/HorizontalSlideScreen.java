@@ -11,7 +11,7 @@ import com.lyft.scoop.transitions.BackwardSlideTransition;
 import com.lyft.scoop.transitions.ForwardSlideTransition;
 
 @Controller(HorizontalSlideController.class)
-@DaggerModule(HorizontalSlideModule.class)
+@DaggerModule(values = HorizontalSlideModule.class)
 @EnterTransition(ForwardSlideTransition.class)
 @ExitTransition(BackwardSlideTransition.class)
 public class HorizontalSlideScreen extends Screen{

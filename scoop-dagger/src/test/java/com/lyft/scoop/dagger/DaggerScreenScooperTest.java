@@ -39,7 +39,7 @@ public class DaggerScreenScooperTest {
         assertNotNull(daggerScreenScooper.addServices(scoopBuilder, new TestNoModuleScreen(), scoop));
     }
 
-    @DaggerModule(TestModule.class)
+    @DaggerModule(values = TestModule.class)
     private static class TestScreen extends Screen {
 
     }

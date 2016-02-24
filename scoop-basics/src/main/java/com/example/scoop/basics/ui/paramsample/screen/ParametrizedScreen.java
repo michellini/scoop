@@ -10,7 +10,7 @@ import com.lyft.scoop.dagger.DaggerModule;
 import com.lyft.scoop.transitions.FadeTransition;
 
 @Controller(ParametrizedController.class)
-@DaggerModule(ParametrizedModule.class)
+@DaggerModule(values = ParametrizedModule.class)
 @EnterTransition(FadeTransition.class)
 @ExitTransition(FadeTransition.class)
 public class ParametrizedScreen extends Screen {

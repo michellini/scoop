@@ -11,7 +11,7 @@ import com.lyft.scoop.transitions.DownwardSlideTransition;
 import com.lyft.scoop.transitions.UpwardSlideTransition;
 
 @Controller(VerticalSlideController.class)
-@DaggerModule(VerticalSlideModule.class)
+@DaggerModule(values = VerticalSlideModule.class)
 @EnterTransition(UpwardSlideTransition.class)
 @ExitTransition(DownwardSlideTransition.class)
 public class VerticalSlideScreen extends Screen{

@@ -10,7 +10,7 @@ import com.lyft.scoop.dagger.DaggerModule;
 import com.lyft.scoop.transitions.FadeTransition;
 
 @Controller(EnterFirstNameController.class)
-@DaggerModule(EnterFirstNameModule.class)
+@DaggerModule(values = EnterFirstNameModule.class)
 @EnterTransition(FadeTransition.class)
 @ExitTransition(FadeTransition.class)
 public class EnterFirstNameScreen extends Screen{

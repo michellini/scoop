@@ -10,7 +10,7 @@ import com.lyft.scoop.Screen;
 import com.lyft.scoop.dagger.DaggerModule;
 
 @Controller(AutoTransitionEndController.class)
-@DaggerModule(AutoTransitionEndModule.class)
+@DaggerModule(values = AutoTransitionEndModule.class)
 @EnterTransition(AutoTransition.class)
 @ExitTransition(AutoTransition.class)
 public class AutoTransitionEndScreen extends Screen {

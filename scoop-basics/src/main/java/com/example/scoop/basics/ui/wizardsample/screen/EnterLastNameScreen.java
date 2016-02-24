@@ -11,7 +11,7 @@ import com.lyft.scoop.transitions.BackwardSlideTransition;
 import com.lyft.scoop.transitions.ForwardSlideTransition;
 
 @Controller(EnterLastNameController.class)
-@DaggerModule(EnterLastNameModule.class)
+@DaggerModule(values = EnterLastNameModule.class)
 @EnterTransition(ForwardSlideTransition.class)
 @ExitTransition(BackwardSlideTransition.class)
 public class EnterLastNameScreen extends Screen{
